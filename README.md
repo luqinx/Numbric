@@ -6,7 +6,7 @@ Numberic 是一个数字处理工具，不仅可以进行int，byte和字符串�
 的数字，按位改数同理是将这段比特位数字修改为指定值.
 
 1. 按位取数 Numbric.getValue(int srcValue,int from,int len)
-
+````
    从原值提取新值
    
    @param srcValue 原值
@@ -18,10 +18,11 @@ Numberic 是一个数字处理工具，不仅可以进行int，byte和字符串�
    srcValue 11111111 00000000 11001100 00000011, 
    mask:    00001111 11110000 00000000 00000000
    result:      1111 0000                      = 0xf0
-    
+ `````
 
 2. 按位改数 Numbric.modifyValue(int srcValue,int modifyFrom,int modifyLen,int modify)
 
+````
     此方法将 srcValue从第modifyFrom比特位开始，modifyLen长度这段部分修改为modify
     
     @param srcValue    待修改的值
@@ -36,6 +37,7 @@ Numberic 是一个数字处理工具，不仅可以进行int，byte和字符串�
     src :    10101010 10101010 10101010 10101010
     modify:  00000000 11110000 00000000 00000000
     result:  10101010 11110000 10101010 10101010
+````
 
 Numbric使用的是java语言，只要稍作调整就可以替换到c，c++等其他语言环境
 
